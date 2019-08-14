@@ -1,3 +1,11 @@
 
+! General ----------------------------------------------
+URxvt.scrollBar: false
+URxvt*internalBorder: 20 
+
 ! Colors ----------------------------------------------
+URxvt*background: color_background
+URxvt*foreground: color_text
+
 ! Fonts ----------------------------------------------
+

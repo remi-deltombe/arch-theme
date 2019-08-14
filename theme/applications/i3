@@ -1,7 +1,7 @@
 
 ! Distance --------------------------------------------
-#define i3_gap_inner 10
-#define i3_gap_outer 10
+i3_gap_inner: 20
+i3_gap_outer: 0
 
 #define i3_window_border_size 1
 

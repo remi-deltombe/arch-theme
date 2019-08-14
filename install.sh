@@ -2,9 +2,10 @@
 
 # Install dependencies
 echo ""
-pacman -S --no-confirm --needed \
+pacman -S --noconfirm --needed \
     xorg\
     xorg-xinit\
+    xorg-xmodmap\
     i3-gaps\
     rxvt-unicode\
     zsh\
@@ -13,15 +14,31 @@ pacman -S --no-confirm --needed \
     rofi\
     compton\
     vim\
-    ranger
+    ranger\
+    cmake\
+    python2\
+    pkg-config\
+    python-sphinx\
+    libmpdclient\
+    make\
+    fakeroot
 
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Install polybar
+git clone https://aur.archlinux.org/polybar.git 2>/dev/null 
+cd polybar
+makepkg -i
+cd ..
 
 # Update theme
 ./update.sh
 
 # Delete previous configs
+rm -f ~/.vimrc 
+rm -f ~/.zshrc
+rm -f ~/.xinitrc
 
 # Create symlink
 ln -s ~/.config/vim ~/.vimrc

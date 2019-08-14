@@ -1,9 +1,6 @@
 
 #!/bin/sh
 
-userresources=$HOME/.Xresources
-usermodmap=$HOME/.Xmodmap
-sysresources=/etc/X11/xinit/resources
-sysmodmap=/etc/X11/xinit/modmap
+xrdb -merge -I$HOME $HOME/.config/X11/resources
 
 exec i3

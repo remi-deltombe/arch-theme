@@ -1,37 +1,37 @@
 
 ! Load color scheme
-#include "~/.theme/scheme/flat"
+#include ".theme/scheme/flat"
 
 ! Dark colors
-#define color_00 color_grey_900 ! black
-#define color_01 color_red_600 ! red
-#define color_02 color_green_600 ! green
-#define color_03 color_orange_600 ! orange/yellow
-#define color_04 color_blue_600 ! blue
-#define color_05 color_purple_600 ! purple/majenta
-#define color_06 color_cyan_600 ! cyan
-#define color_07 color_grey_300 ! white
+#define color_00 color_grey_900
+#define color_01 color_red_600
+#define color_02 color_green_600
+#define color_03 color_orange_600
+#define color_04 color_blue_600
+#define color_05 color_purple_600
+#define color_06 color_cyan_600
+#define color_07 color_grey_300
 
 ! Light colors
-#define color_08 color_grey_600 ! black
-#define color_09 color_red_300 ! red
-#define color_10 color_green_300 ! green
-#define color_11 color_orange_300 ! orange/yellow
-#define color_12 color_blue_300 ! blue
-#define color_13 color_purple_300 ! purple/majenta
-#define color_14 color_cyan_300 ! cyan
-#define color_15 color_grey_100 ! white
+#define color_08 color_grey_600
+#define color_09 color_red_300
+#define color_10 color_green_300
+#define color_11 color_orange_300
+#define color_12 color_blue_300
+#define color_13 color_purple_300
+#define color_14 color_cyan_300
+#define color_15 color_grey_100
 
 ! Function related colors
 #define color_info color_12
 #define color_warning color_11
 #define color_error color_09
 
-#define color_background color_00 ! Use as background color by applications
-#define color_border color_00     ! Use as background color by applications
+#define color_background color_00
+#define color_border color_00    
 
-#define color_text color_15       ! Use as default text color by applications
-#define color_cursor color_info   ! Use as default cursor color by applications
+#define color_text color_15      
+#define color_cursor color_info  
 
 ! Apply default color
 *.color0:       color_00
@@ -50,3 +50,4 @@
 *.color13:      color_13
 *.color14:      color_14
 *.color15:      color_15
+

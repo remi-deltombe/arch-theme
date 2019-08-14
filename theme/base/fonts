@@ -8,7 +8,9 @@ Xft.rgba: rgb
 Xft.antialias: 1
 
 ! Variables
-#define fonts_family DejaVu Sans Mono
-#define fonts_size 12
-#define fonts xft:fonts_family:pixelsize=fonts_size
+! #define fonts_family Meslo\ LG\ L\ for\ Powerline
+#define fonts_family DejaVu\ Sans\ Mono\ for\ Powerline
+#define fonts_size 16
+#define fonts xft:fonts_family:pixelsize=fonts_size:antialias=true
 
+*.font: fonts
