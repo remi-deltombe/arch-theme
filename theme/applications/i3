@@ -1,0 +1,9 @@
+
+! Distance --------------------------------------------
+#define i3_gap_inner 10
+#define i3_gap_outer 10
+
+#define i3_window_border_size 1
+
+
+! Fonts ----------------------------------------------

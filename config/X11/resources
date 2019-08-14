@@ -1,0 +1,6 @@
+
+#include "~/.theme/base/fonts"
+#include "~/.theme/base/colors"
+
+#include "~/.theme/applications/urxvt"
+#include "~/.theme/applications/rofi"

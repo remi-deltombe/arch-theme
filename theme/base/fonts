@@ -1,0 +1,14 @@
+
+! Xft configuration
+Xft.lcdfilter: lcddefault
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.autohint: 0
+Xft.rgba: rgb
+Xft.antialias: 1
+
+! Variables
+#define fonts_family DejaVu Sans Mono
+#define fonts_size 12
+#define fonts xft:fonts_family:pixelsize=fonts_size
+
