@@ -39,8 +39,10 @@ cd ..
 rm -f ~/.vimrc 
 rm -f ~/.zshrc
 rm -f ~/.xinitrc
+rm -f ~/.conkyrc
 
 # Create symlink
 ln -s ~/.config/vim ~/.vimrc
 ln -s ~/.config/zsh ~/.zshrc
+ln -s ~/.config/conky ~/.conkyrc
 ln -s ~/.config/X11/init ~/.xinitrc

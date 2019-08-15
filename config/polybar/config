@@ -25,7 +25,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3
 modules-center = 
-modules-right = wlan date  powermenu
+modules-right = wlan date battery  powermenu
 
 tray-position =
 ;tray-padding =
@@ -134,6 +134,35 @@ menu-3-0 = log off
 menu-3-0-exec = pkill -KILL -u $USER
 menu-3-1 = cancel
 menu-3-1-exec = menu-open-0
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = ADP1
+poll-interval = 5
+
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+label-full = %percentage%
+
+ramp-capacity-0 = 
+ramp-capacity-0-foreground = #f00
+ramp-capacity-1 = 
+ramp-capacity-1-foreground = #ff0
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = #fff
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = #fff
+animation-charging-framerate = 750
 
 [settings]
 screenchange-reload = true

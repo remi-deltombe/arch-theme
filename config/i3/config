@@ -32,6 +32,24 @@ set_from_resource $font_size font_size 12
 
 floating_modifier $mod
 
+
+### Backlight ###
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # Increase Brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # Decrease Brightness
+
+### Media Player ###
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+
+
+### Sound ###
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 10%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 10%-
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle-mute & amixer set Speaker unmute
+
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -125,11 +143,6 @@ client.urgent           $color_warning $color_background $color_text $color_info
 client.placeholder      $color_border $color_background $color_text $color_info $color_border
 
 client.background       $color_background
-
-# bar
-bar {
-    height 0
-}
 
 # Windows
 for_window[class=".*"] border pixel 0
