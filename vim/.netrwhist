@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/remi/Projects/arch-theme/config/i3'
+let g:netrw_dirhist_1='/home/remi/Projects/arch-theme/config'
+let g:netrw_dirhist_0='/home/remi/Projects/arch-theme'
+let g:netrw_dirhist_9='/home/remi/Projects/arch-theme/theme/applications'
+let g:netrw_dirhist_8='/home/remi/Projects/arch-theme/theme'
+let g:netrw_dirhist_7='/home/remi/Projects/arch-theme'
+let g:netrw_dirhist_6='/home/remi/Projects/arch-theme/config/X11'
+let g:netrw_dirhist_5='/home/remi/Projects/arch-theme/config'
+let g:netrw_dirhist_4='/home/remi/Projects/arch-theme'
+let g:netrw_dirhist_3='/home/remi/Projects/arch-theme/theme'

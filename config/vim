@@ -1,2 +1,5 @@
 :set nu rnu
 :set guifont="DejaVu Sans Mono for Powerline"
+
+map f :RangerNewTab<CR>
+

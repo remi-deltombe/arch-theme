@@ -41,6 +41,7 @@ rm -f ~/.vimrc
 rm -f ~/.zshrc
 rm -f ~/.xinitrc
 rm -f ~/.conkyrc
+rm -f ~/.vimrc
 
 # Create symlink
 ln -s ~/.config/vim ~/.vimrc
